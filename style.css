@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url(extra/Montserrat-VariableFont_wght.ttf);
@@ -24,7 +28,7 @@
 }
 
 #text-container {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .buttons {
@@ -38,28 +42,19 @@
   box-shadow: -2px 2px 5px rgb(150, 150, 150);
 }
 
-.buttons:hover {
-  background-color: #c7c7c7;
-}
-
 .buttons:focus {
-  background-color: #a1a1a1;
-  box-shadow: none;
+  background-color: #3e8e41;
 }
 
 .forms {
-  width: 200px;
-  height: 60px;
+  width: 300px;
+  height: 30px;
   border-radius: 15px;
   margin: 20px 20px;
   border-style: none;
   text-align: center;
   background-color: #ffffff;
   box-shadow: -2px 2px 5px rgb(150, 150, 150);
-}
-
-.forms:hover {
-  background-color: #c7c7c7;
 }
 
 .text-areas {
@@ -71,6 +66,21 @@
   scrollbar-width: thin;
   scroll-behavior: smooth;
   width: 500px;
+}
+
+#submit-button {
+  background-color: rgb(163, 255, 163);
+  margin-top: 30px;
+}
+
+.buttons:active {
+  background-color: #3e8e41;
+  box-shadow: -2px 2px 5px rgb(150, 150, 150);
+  transform: translateY(4px);
+}
+
+.buttons:hover {
+  background-color: rgb(0, 146, 0);
 }
 
 #content-wrap {

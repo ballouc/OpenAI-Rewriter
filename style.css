@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(extra/Montserrat-VariableFont_wght.ttf);
+}
+
+#content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-family: Montserrat;
+  margin-top: 50px;
+}
+
+#length-select {
+  padding-top: 2.5rem;
+}
+
+#text-container {
+  padding-top: 100px;
+}
+
+.buttons {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 10px 20px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: none;
+  box-shadow: -2px 2px 5px rgb(150, 150, 150);
+}
+
+.buttons:hover {
+  background-color: #c7c7c7;
+}
+
+.buttons:focus {
+  background-color: #a1a1a1;
+  box-shadow: none;
+}
+
+.forms {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 20px 20px;
+  border-style: none;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: -2px 2px 5px rgb(150, 150, 150);
+}
+
+.forms:hover {
+  background-color: #c7c7c7;
+}
+
+.text-areas {
+  resize: none;
+  border-radius: 15px;
+  border: solid 1px rgb(185, 185, 185);
+  padding: 10px 20px;
+  margin: 0px 50px;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  width: 500px;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+}

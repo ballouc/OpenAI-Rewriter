@@ -7,55 +7,59 @@
     <title>API Rewriter</title>
   </head>
   <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <h1 id="title">Phrase Rewriter</h1>
-        <div id="length-select">
-          <button type="button" class="buttons">Shorter</button>
-          <button type="button" class="buttons" autofocus>Unchanged</button>
-          <button type="button" class="buttons">Longer</button>
-        </div>
-        <div id="option-select">
-          <select name="languages" id="languages" value="English" class="forms">
-            <option value="eng">English</option>
-            <option value="fr">French</option>
-            <option value="esp">Spanish</option>
-          </select>
-          <select name="tone" id="tone" value="Formal" class="forms">
-            <option value="formal">Formal</option>
-            <option value="informal">Informal</option>
-            <option value="sad">Sad</option>
-            <option value="sincere">Sincere</option>
-            <option value="joyful">Joyful</option>
-            <option value="humorous">Humorous</option>
-            <option value="serious">Serious</option>
-            <option value="angry">Angry</option>
-            <option value="fearful">Fearful</option>
-          </select>
-        </div>
-        <div id="text-container">
-          <textarea
-            name="user-input"
-            id="user-input"
-            class="text-areas"
-            cols="60"
-            rows="10"
-            placeholder="Input your text to be rewritten here..."
-            required
-          ></textarea>
-          <textarea
-            name="text-output"
-            id="text-output"
-            class="text-areas"
-            cols="60"
-            rows="10"
-            placeholder="Text output here."
-          ></textarea>
-        </div>
-        <button id="submit-button" class="buttons">See Results</button>
+    <div id="content-wrap">
+      <h1 id="title">Phrase Rewriter</h1>
+      <div id="length-select">
+        <button type="radio" class="buttons" name="length-options">
+          Shorter
+        </button>
+        <button type="radio" class="buttons" name="length-options" autofocus>
+          Unchanged
+        </button>
+        <button type="radio" class="buttons" name="length-options">
+          Longer
+        </button>
       </div>
-      <footer id="footer">powered by openAI</footer>
+      <div id="option-select">
+        <select name="languages" id="languages" value="English" class="forms">
+          <option value="eng">English</option>
+          <option value="fr">French</option>
+          <option value="esp">Spanish</option>
+        </select>
+        <select name="tone" id="tone" value="Formal" class="forms">
+          <option value="formal">Formal</option>
+          <option value="informal">Informal</option>
+          <option value="sad">Sad</option>
+          <option value="sincere">Sincere</option>
+          <option value="joyful">Joyful</option>
+          <option value="humorous">Humorous</option>
+          <option value="serious">Serious</option>
+          <option value="angry">Angry</option>
+          <option value="fearful">Fearful</option>
+        </select>
+      </div>
+      <div id="text-container">
+        <textarea
+          name="user-input"
+          id="user-input"
+          class="text-areas"
+          cols="60"
+          rows="10"
+          placeholder="Input your text to be rewritten here..."
+          required
+        ></textarea>
+        <textarea
+          name="text-output"
+          id="text-output"
+          class="text-areas"
+          cols="60"
+          rows="10"
+          placeholder="Text output here."
+        ></textarea>
+      </div>
+      <button id="submit-button" class="buttons">See Results</button>
     </div>
+    <footer id="footer">@ballouc // powered by openAI</footer>
     <script src="script.js"></script>
   </body>
 </html>
